@@ -5,3 +5,6 @@ pull-secret*
 users.htpasswd
 kubeadmin-password
 .secrets/
+kubeconfig*
+*.htpasswd
+auth/
