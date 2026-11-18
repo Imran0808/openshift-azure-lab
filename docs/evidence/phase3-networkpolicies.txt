@@ -1,0 +1,4 @@
+NAME                           POD-SELECTOR   AGE
+allow-from-openshift-ingress   <none>         5m20s
+allow-same-namespace           <none>         5m20s
+default-deny-ingress           <none>         5m20s
