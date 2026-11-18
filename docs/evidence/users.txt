@@ -1,0 +1,3 @@
+NAME    UID                                    FULL NAME   IDENTITIES
+alice   0a3821fb-aa7d-4a87-998a-3b87a695fb39               lab-htpasswd:alice
+bob     2aec9af0-fd6d-4760-97cc-4797a11ee3b4               lab-htpasswd:bob
