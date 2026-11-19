@@ -1,0 +1,4 @@
+NAME                      READY   STATUS    RESTARTS   AGE
+hello-55cdb5c94c-nwsn4    1/1     Running   0          51m
+hello1-77fdc4f6b6-td6cr   1/1     Running   0          13m
+web-69b9c9bf7d-p2j5j      1/1     Running   0          40m
