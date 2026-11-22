@@ -23,3 +23,7 @@ echo "Done. Next: test alice, then delete kubeadmin."
 echo "== Project template"
 oc apply -f $HOME/openshift-azure-lab/platform/project-template/template.yaml
 oc patch project.config.openshift.io/cluster --type=merge -p '{"spec":{"projectRequestTemplate":{"name":"project-request"}}}'
+echo "== Ingress certificate (Let's Encrypt, from ~/secrets)"
+CERTDIR=$HOME/secrets/letsencrypt/live/apps.ocp-lab.imranmallick.in
+oc create secret tls letsencrypt-apps --cert=$CERTDIR/fullchain.pem --key=$CERTDIR/privkey.pem -n openshift-ingress --dry-run=client -o yaml | oc apply -f -
+oc patch ingresscontroller.operator default -n openshift-ingress-operator --type=merge -p '{"spec":{"defaultCertificate":{"name":"letsencrypt-apps"}}}'
