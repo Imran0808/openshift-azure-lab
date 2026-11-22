@@ -1,0 +1,1 @@
+EncryptionCompleted: All resources encrypted: secrets, configmaps
