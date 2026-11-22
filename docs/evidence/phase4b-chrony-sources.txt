@@ -1,0 +1,8 @@
+Starting pod/ocp-lab-lhbfb-worker-eastasia1-rxcmx-debug-hp74j ...
+To use host binaries, run `chroot /host`. Instead, if you need to access host namespaces, run `nsenter -a -t 1`.
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* time4.google.com              1   6   337    13  +3905us[+4136us] +/-   19ms
+^+ time.cloudflare.com           3   6   337    13  -8531us[-8301us] +/-   42ms
+
+Removing debug pod ...

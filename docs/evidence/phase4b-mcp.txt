@@ -1,0 +1,3 @@
+NAME     CONFIG                                             UPDATED   UPDATING   DEGRADED   MACHINECOUNT   READYMACHINECOUNT   UPDATEDMACHINECOUNT   DEGRADEDMACHINECOUNT   AGE
+master   rendered-master-fec4c58fcf5e37a367482ca0e2a3f29b   True      False      False      3              3                   3                     0                      118m
+worker   rendered-worker-1cbb1a30c0e4b3362e9bd72f2ff44cb4   False     True       False      2              1                   1                     0                      118m
