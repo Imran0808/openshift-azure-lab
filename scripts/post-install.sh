@@ -20,3 +20,6 @@ oc wait co/authentication --for=condition=Progressing=False --timeout=600s
 oc get co authentication
 
 echo "Done. Next: test alice, then delete kubeadmin."
+echo "== Project template"
+oc apply -f $HOME/openshift-azure-lab/platform/project-template/template.yaml
+oc patch project.config.openshift.io/cluster --type=merge -p '{"spec":{"projectRequestTemplate":{"name":"project-request"}}}'

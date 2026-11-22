@@ -1,0 +1,10 @@
+NAME                          REQUEST                                                 LIMIT                                   AGE
+resourcequota/default-quota   pods: 0/10, requests.cpu: 0/1, requests.memory: 0/2Gi   limits.cpu: 0/2, limits.memory: 0/4Gi   63s
+
+NAME                        CREATED AT
+limitrange/default-limits   2026-11-22T07:01:23Z
+
+NAME                                                           POD-SELECTOR   AGE
+networkpolicy.networking.k8s.io/allow-from-openshift-ingress   <none>         64s
+networkpolicy.networking.k8s.io/allow-same-namespace           <none>         64s
+networkpolicy.networking.k8s.io/default-deny-ingress           <none>         64s
