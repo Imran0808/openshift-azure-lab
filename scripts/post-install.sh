@@ -8,6 +8,9 @@ echo "== Phase 2: identity"
 oc create secret generic htpass-secret --from-file=htpasswd=$HOME/secrets/users.htpasswd -n openshift-config --dry-run=client -o yaml | oc apply -f -
 oc apply -f $REPO/platform/identity/
 
+echo "== etcd encryption"
+oc patch apiserver cluster --type=merge -p '{"spec":{"encryption":{"type":"aesgcm"}}}'
+
 echo "== Phase 3: tenants"
 oc apply -f $REPO/platform/tenants/team-a-dev/
 
