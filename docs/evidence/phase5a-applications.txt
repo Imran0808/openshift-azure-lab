@@ -1,0 +1,5 @@
+NAME               SYNC STATUS   HEALTH STATUS
+identity           Synced        Healthy
+machineconfig      Synced        Healthy
+project-template   Synced        Healthy
+team-a-dev         Synced        Healthy
